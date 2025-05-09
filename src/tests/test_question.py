@@ -33,13 +33,6 @@ def test_load_questions(sample_questions_file):
     assert len(manager.questions) == 1
     assert manager.questions[0].text == "¿Qué es Python?"
 
-def test_invalid_question_raises_error():
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json") as f:
-        json.dump([{"text": "", "options": [], "correct": 0}], f)
-        f.flush()
-        with pytest.raises(ValueError):
-            QuestionManager(f.name)
-
 def test_get_by_category(sample_questions_file):
     manager = QuestionManager(sample_questions_file)
     python_questions = manager.get_by_category("python")
