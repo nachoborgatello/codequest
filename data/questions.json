@@ -1,0 +1,22 @@
+[
+    {
+        "text": "¿Qué es Git?",
+        "options": [
+            "Un sistema de control de versiones",
+            "Un lenguaje de programación",
+            "Un editor de código"
+        ],
+        "correct": 0,
+        "category": "git"
+    },
+    {
+        "text": "¿Cómo se define una función en Python?",
+        "options": [
+            "function my_func():",
+            "def my_func():",
+            "fn my_func():"
+        ],
+        "correct": 1,
+        "category": "python"
+    }
+]
